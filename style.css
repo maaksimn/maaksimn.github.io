@@ -19,7 +19,7 @@ body {
     margin-right: -15px;
 }
 
-.row:after, .menu:after {
+.row:after, .menu:after, .search:after{
     content: "";
     display: block;
     clear: both;
@@ -54,6 +54,10 @@ body {
     border-left: 1px solid #2c71b8;
 }
 
+.search li {
+    float: left;
+}
+
 .menu li:last-child {
     border-right: 1px solid #2c71b8;
 }
@@ -72,4 +76,64 @@ body {
 .menu a:hover {
     color: white;
     background-color: #2c71b8;
+}
+
+.text-search {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #2c71b8;
+    background-color :inherit; 
+    text-indent:20px;
+    font-size: 21px;
+    font-weight: 300;
+    color: #2c71b8;
+}
+
+::placeholder {
+    font-size: 21px;
+    font-weight: 300;
+    color: #2c71b8;
+}
+
+.search-button {
+    border: none;
+    background-color: #2c71b8;
+    width: 30px;
+    height: 30px;
+    position: absolute; 
+    margin-top: 4px;
+    margin-left: -34px;
+}
+
+.shopping-cart {
+    background-color: white;;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-left: 30px 
+}
+
+.shopping-cart img {
+    display: block;
+    margin: 10px auto; 
+}
+
+.count-shopping-cart {
+    width:20px;
+    height:20px;
+    background-color: #2c71b8;
+    color: white;
+    text-align: center;
+    border-radius: 100%;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+.search {
+    position: absolute;
+    margin-top: 5px;
 }
