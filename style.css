@@ -205,9 +205,9 @@ body {
       position:absolute;
       top: 19px;
       right: 12px;
-      width: 16px;
-      height: 11px;
-      background-image: url(images/arrow-down-black.png);
+      width: 15px;
+      height: 15px;
+      background-image: url(images/arrow-down-blue.png);
       background-size: cover;
   }
 
@@ -285,10 +285,10 @@ body {
     background-position: center;
 }
 
-.to-product:focus {
+.to-product:hover {
     background-color: #2c71b8;
     background-image: url(images/icon6.png);
-    outline: 0;
+    
 }
 
 .to-favorite {
@@ -304,10 +304,10 @@ body {
     background-position: center;
 }
 
-.to-favorite:focus {
+.to-favorite:hover {
     background-color: #2c71b8;
     background-image: url(images/icon7.png);
-    outline: 0;
+   
 }
 
 .more-details {
@@ -324,13 +324,21 @@ body {
     outline: 0;
 }
 
+.more-details:hover {
+    background-color: rgba(86, 141, 198, 0.5);
+}
+
+.add-to-cart:hover {
+    background-color: rgba(86, 141, 198, 0.5);
+}
 
 .add-to-cart {
     position: relative;
     width: 210px;
     height: 50px;
-    background-color: rgba(86, 141, 198, 0.5);
-    border: none;
+    background-color: inherit;
+    border: 1px solid white;
+    /* background-color: rgba(86, 141, 198, 0.5); */
     margin-left: 29px;
     margin-right: 29px;
     margin-top: 15px;
