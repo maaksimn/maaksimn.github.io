@@ -197,17 +197,6 @@ body {
     color: white;
   }
 
-  .arrow:after {
-    content: "";
-    display: block;
-    width: 5px;
-    height: 5px;
-    background-image: url(images/arrow-down.png);
-    position: absolute;
-    top: 22px;
-    right: 10px;
-  }
-
   .menu li:nth-child(2) {
       position: relative;
   }
@@ -218,12 +207,12 @@ body {
       right: 12px;
       width: 16px;
       height: 11px;
-      background-image: url(images/arrow-down-white.png);
+      background-image: url(images/arrow-down-black.png);
       background-size: cover;
   }
 
   .menu li:hover > div {
-    background-image: url(images/arrow-down-black.png);
+    background-image: url(images/arrow-down-white.png);
   }
 
   .slide {
@@ -382,9 +371,9 @@ body {
 .product-info p:last-child{
     font-size: 48px;
     font-weight: 700;
-   text-align: center;
-   margin-bottom: 25px;
-   margin-top: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 .product-info p:nth-child(2) {
