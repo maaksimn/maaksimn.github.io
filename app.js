@@ -20,6 +20,7 @@ for (let i = 0; i < productToFav.length; i++) {
         } else {
             productToFav[i].style.backgroundImage = "url(images/icon5.png)";
             productToFav[i].style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
+            $(".to-favorite").hover();
         }
     }    
 )}
