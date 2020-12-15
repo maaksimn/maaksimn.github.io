@@ -15,11 +15,14 @@ for (let i = 0; i < productToFav.length; i++) {
     productToFav[i].addEventListener("click", function() {
         count[i] += 1;
         if (count[i] % 2 == 1 ) {
-            productToFav[i].style.backgroundColor = '#2c71b8';
-            productToFav[i].style.backgroundImage = "url(images/icon7.png)";
+            changeColorAndImageForFav(productToFav[i], "#2c71b8", "url(images/icon7.png)");
         } else {
-            productToFav[i].style.backgroundImage = "url(images/icon5.png)";
-            productToFav[i].style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
-        }
-    }    
+            changeColorAndImageForFav(productToFav[i], "rgba(255, 255, 255, 0.5)", "url(images/icon5.png)");
+        } 
+    }   
 )}
+
+function changeColorAndImageForFav(button, color, imageUrl) {
+    button.style.backgroundColor = color;
+    button.style.backgroundImage = imageUrl;
+}
